@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="copa-mundial.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/estilos.css">
+    <title>Contactos</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <form class="contact_form" action="#" id="contact_form" runat="server">
+            <div>
+                <ul>
+                    <li>
+                        <h2>Contactos</h2>
+                        <span class="required_notification">* Datos requeridos</span>
+                    </li>
+                    <li>
+                        <label for="name">Nombre:</label>
+                        <input type="text" placeholder="Escribir su nombre" required />
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="nombre@algo.com" required />
+                        <span class="form_hint">Formato correcto: "nombre@algo.com"</span>
+                    </li>
+                    <li>
+                        <label for="website">Sitio web:</label>
+                        <input type="url" name="website" placeholder="http://algo.com" required pattern="(http|https)://.+" />
+                        <span class="form_hint">Formato correcto: "http://algo.com"</span>
+                    </li>
+                    <li>
+                        <label for="message">Mensaje:</label>
+                        <textarea name="message" cols="40" rows="6" required></textarea>
+                    </li>
+                    <li>
+                        <button class="submit" type="submit">Enviar mensaje</button>
+                    </li>
+                </ul>
+            </div>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
